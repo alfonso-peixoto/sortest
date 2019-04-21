@@ -11,34 +11,33 @@ using System.Threading;
 
 namespace Gerenc_Prova
 {
-    public partial class cadastros : Form
+    public partial class provas : Form
     {
-        public cadastros()
+        public provas()
         {
             InitializeComponent();
         }
 
-        private void CadNome_OnValueChanged(object sender, EventArgs e)
+        private void Provas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProvasDataSetBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }
         Thread nt;
-        private void CadEntrar_Click(object sender, EventArgs e)
+        private void CadButCadastrar_Click(object sender, EventArgs e)
         {
             this.Close();
-            nt = new Thread(inicio);
+            nt = new Thread(gerenciador);
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
         }
-
-        private void inicio()
+        private void gerenciador()
         {
-            Application.Run(new Form1());
-        }
-
-        private void Cadastros_Load(object sender, EventArgs e)
-        {
-
+            Application.Run(new gerenciador());
         }
     }
 }

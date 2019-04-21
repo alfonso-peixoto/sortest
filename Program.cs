@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gerenc_Provas
+namespace Gerenc_Prova
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Gerenc_Provas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Form1());
         }
     }
 }

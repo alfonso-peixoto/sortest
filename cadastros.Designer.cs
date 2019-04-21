@@ -1,4 +1,4 @@
-﻿namespace Gerenc_Provas
+﻿namespace Gerenc_Prova
 {
     partial class cadastros
     {
@@ -29,155 +29,157 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cadastros));
-            this.CadEntar = new System.Windows.Forms.Label();
-            this.CadButCadastrar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.CadNome = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.CadSenha = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.CadSobrenome = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.CadConfSenha = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.CadEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cadNome = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cadSobrenome = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cadEmail = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cadSenha = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cadConfSenha = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.cadButCadastrar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.cadEntrar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // CadEntar
+            // cadNome
             // 
-            this.CadEntar.AutoSize = true;
-            this.CadEntar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadEntar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.CadEntar.Location = new System.Drawing.Point(377, 368);
-            this.CadEntar.Name = "CadEntar";
-            this.CadEntar.Size = new System.Drawing.Size(46, 16);
-            this.CadEntar.TabIndex = 14;
-            this.CadEntar.Text = "Entrar";
+            this.cadNome.AllowDrop = true;
+            this.cadNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadNome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cadNome.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cadNome.ForeColor = System.Drawing.Color.White;
+            this.cadNome.HintForeColor = System.Drawing.Color.White;
+            this.cadNome.HintText = "Nome";
+            this.cadNome.isPassword = false;
+            this.cadNome.LineFocusedColor = System.Drawing.Color.Silver;
+            this.cadNome.LineIdleColor = System.Drawing.Color.Gray;
+            this.cadNome.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.cadNome.LineThickness = 3;
+            this.cadNome.Location = new System.Drawing.Point(172, 101);
+            this.cadNome.Margin = new System.Windows.Forms.Padding(4);
+            this.cadNome.Name = "cadNome";
+            this.cadNome.Size = new System.Drawing.Size(220, 44);
+            this.cadNome.TabIndex = 1;
+            this.cadNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cadNome.OnValueChanged += new System.EventHandler(this.CadNome_OnValueChanged);
             // 
-            // CadButCadastrar
+            // cadSobrenome
             // 
-            this.CadButCadastrar.ActiveBorderThickness = 1;
-            this.CadButCadastrar.ActiveCornerRadius = 20;
-            this.CadButCadastrar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.CadButCadastrar.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadButCadastrar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.CadButCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadButCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CadButCadastrar.BackgroundImage")));
-            this.CadButCadastrar.ButtonText = "Cadastrar";
-            this.CadButCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CadButCadastrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadButCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadButCadastrar.IdleBorderThickness = 1;
-            this.CadButCadastrar.IdleCornerRadius = 20;
-            this.CadButCadastrar.IdleFillColor = System.Drawing.Color.Silver;
-            this.CadButCadastrar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadButCadastrar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadButCadastrar.Location = new System.Drawing.Point(310, 322);
-            this.CadButCadastrar.Margin = new System.Windows.Forms.Padding(5);
-            this.CadButCadastrar.Name = "CadButCadastrar";
-            this.CadButCadastrar.Size = new System.Drawing.Size(181, 41);
-            this.CadButCadastrar.TabIndex = 13;
-            this.CadButCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cadSobrenome.AllowDrop = true;
+            this.cadSobrenome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadSobrenome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cadSobrenome.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cadSobrenome.ForeColor = System.Drawing.Color.White;
+            this.cadSobrenome.HintForeColor = System.Drawing.Color.White;
+            this.cadSobrenome.HintText = "Sobrenome";
+            this.cadSobrenome.isPassword = false;
+            this.cadSobrenome.LineFocusedColor = System.Drawing.Color.Silver;
+            this.cadSobrenome.LineIdleColor = System.Drawing.Color.Gray;
+            this.cadSobrenome.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.cadSobrenome.LineThickness = 3;
+            this.cadSobrenome.Location = new System.Drawing.Point(402, 101);
+            this.cadSobrenome.Margin = new System.Windows.Forms.Padding(4);
+            this.cadSobrenome.Name = "cadSobrenome";
+            this.cadSobrenome.Size = new System.Drawing.Size(220, 44);
+            this.cadSobrenome.TabIndex = 2;
+            this.cadSobrenome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // CadNome
+            // cadEmail
             // 
-            this.CadNome.AllowDrop = true;
-            this.CadNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadNome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CadNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadNome.ForeColor = System.Drawing.Color.White;
-            this.CadNome.HintForeColor = System.Drawing.Color.White;
-            this.CadNome.HintText = "Nome";
-            this.CadNome.isPassword = false;
-            this.CadNome.LineFocusedColor = System.Drawing.Color.Silver;
-            this.CadNome.LineIdleColor = System.Drawing.Color.Gray;
-            this.CadNome.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.CadNome.LineThickness = 3;
-            this.CadNome.Location = new System.Drawing.Point(175, 66);
-            this.CadNome.Margin = new System.Windows.Forms.Padding(4);
-            this.CadNome.Name = "CadNome";
-            this.CadNome.Size = new System.Drawing.Size(215, 44);
-            this.CadNome.TabIndex = 12;
-            this.CadNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cadEmail.AllowDrop = true;
+            this.cadEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cadEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cadEmail.ForeColor = System.Drawing.Color.White;
+            this.cadEmail.HintForeColor = System.Drawing.Color.White;
+            this.cadEmail.HintText = "E-mail";
+            this.cadEmail.isPassword = false;
+            this.cadEmail.LineFocusedColor = System.Drawing.Color.Silver;
+            this.cadEmail.LineIdleColor = System.Drawing.Color.Gray;
+            this.cadEmail.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.cadEmail.LineThickness = 3;
+            this.cadEmail.Location = new System.Drawing.Point(172, 153);
+            this.cadEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.cadEmail.Name = "cadEmail";
+            this.cadEmail.Size = new System.Drawing.Size(450, 44);
+            this.cadEmail.TabIndex = 3;
+            this.cadEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // CadSenha
+            // cadSenha
             // 
-            this.CadSenha.AllowDrop = true;
-            this.CadSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CadSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadSenha.ForeColor = System.Drawing.Color.White;
-            this.CadSenha.HintForeColor = System.Drawing.Color.White;
-            this.CadSenha.HintText = "Senha";
-            this.CadSenha.isPassword = false;
-            this.CadSenha.LineFocusedColor = System.Drawing.Color.Silver;
-            this.CadSenha.LineIdleColor = System.Drawing.Color.Gray;
-            this.CadSenha.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.CadSenha.LineThickness = 3;
-            this.CadSenha.Location = new System.Drawing.Point(175, 170);
-            this.CadSenha.Margin = new System.Windows.Forms.Padding(4);
-            this.CadSenha.Name = "CadSenha";
-            this.CadSenha.Size = new System.Drawing.Size(450, 44);
-            this.CadSenha.TabIndex = 11;
-            this.CadSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cadSenha.AllowDrop = true;
+            this.cadSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cadSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cadSenha.ForeColor = System.Drawing.Color.White;
+            this.cadSenha.HintForeColor = System.Drawing.Color.White;
+            this.cadSenha.HintText = "Senha";
+            this.cadSenha.isPassword = false;
+            this.cadSenha.LineFocusedColor = System.Drawing.Color.Silver;
+            this.cadSenha.LineIdleColor = System.Drawing.Color.Gray;
+            this.cadSenha.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.cadSenha.LineThickness = 3;
+            this.cadSenha.Location = new System.Drawing.Point(172, 205);
+            this.cadSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.cadSenha.Name = "cadSenha";
+            this.cadSenha.Size = new System.Drawing.Size(450, 44);
+            this.cadSenha.TabIndex = 4;
+            this.cadSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // CadSobrenome
+            // cadConfSenha
             // 
-            this.CadSobrenome.AllowDrop = true;
-            this.CadSobrenome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadSobrenome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CadSobrenome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadSobrenome.ForeColor = System.Drawing.Color.White;
-            this.CadSobrenome.HintForeColor = System.Drawing.Color.White;
-            this.CadSobrenome.HintText = "Sobrenome";
-            this.CadSobrenome.isPassword = false;
-            this.CadSobrenome.LineFocusedColor = System.Drawing.Color.Silver;
-            this.CadSobrenome.LineIdleColor = System.Drawing.Color.Gray;
-            this.CadSobrenome.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.CadSobrenome.LineThickness = 3;
-            this.CadSobrenome.Location = new System.Drawing.Point(410, 66);
-            this.CadSobrenome.Margin = new System.Windows.Forms.Padding(4);
-            this.CadSobrenome.Name = "CadSobrenome";
-            this.CadSobrenome.Size = new System.Drawing.Size(215, 44);
-            this.CadSobrenome.TabIndex = 10;
-            this.CadSobrenome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cadConfSenha.AllowDrop = true;
+            this.cadConfSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadConfSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cadConfSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cadConfSenha.ForeColor = System.Drawing.Color.White;
+            this.cadConfSenha.HintForeColor = System.Drawing.Color.White;
+            this.cadConfSenha.HintText = "Conf. Senha";
+            this.cadConfSenha.isPassword = false;
+            this.cadConfSenha.LineFocusedColor = System.Drawing.Color.Silver;
+            this.cadConfSenha.LineIdleColor = System.Drawing.Color.Gray;
+            this.cadConfSenha.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.cadConfSenha.LineThickness = 3;
+            this.cadConfSenha.Location = new System.Drawing.Point(172, 257);
+            this.cadConfSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.cadConfSenha.Name = "cadConfSenha";
+            this.cadConfSenha.Size = new System.Drawing.Size(450, 44);
+            this.cadConfSenha.TabIndex = 5;
+            this.cadConfSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // CadConfSenha
+            // cadButCadastrar
             // 
-            this.CadConfSenha.AllowDrop = true;
-            this.CadConfSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadConfSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CadConfSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadConfSenha.ForeColor = System.Drawing.Color.White;
-            this.CadConfSenha.HintForeColor = System.Drawing.Color.White;
-            this.CadConfSenha.HintText = "Conf. Senha";
-            this.CadConfSenha.isPassword = false;
-            this.CadConfSenha.LineFocusedColor = System.Drawing.Color.Silver;
-            this.CadConfSenha.LineIdleColor = System.Drawing.Color.Gray;
-            this.CadConfSenha.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.CadConfSenha.LineThickness = 3;
-            this.CadConfSenha.Location = new System.Drawing.Point(175, 222);
-            this.CadConfSenha.Margin = new System.Windows.Forms.Padding(4);
-            this.CadConfSenha.Name = "CadConfSenha";
-            this.CadConfSenha.Size = new System.Drawing.Size(450, 44);
-            this.CadConfSenha.TabIndex = 9;
-            this.CadConfSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cadButCadastrar.ActiveBorderThickness = 1;
+            this.cadButCadastrar.ActiveCornerRadius = 20;
+            this.cadButCadastrar.ActiveFillColor = System.Drawing.Color.Silver;
+            this.cadButCadastrar.ActiveForecolor = System.Drawing.Color.Gray;
+            this.cadButCadastrar.ActiveLineColor = System.Drawing.Color.Silver;
+            this.cadButCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadButCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cadButCadastrar.BackgroundImage")));
+            this.cadButCadastrar.ButtonText = "Cadastrar";
+            this.cadButCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cadButCadastrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadButCadastrar.ForeColor = System.Drawing.Color.White;
+            this.cadButCadastrar.IdleBorderThickness = 1;
+            this.cadButCadastrar.IdleCornerRadius = 20;
+            this.cadButCadastrar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cadButCadastrar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cadButCadastrar.IdleLineColor = System.Drawing.Color.Silver;
+            this.cadButCadastrar.Location = new System.Drawing.Point(302, 362);
+            this.cadButCadastrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cadButCadastrar.Name = "cadButCadastrar";
+            this.cadButCadastrar.Size = new System.Drawing.Size(199, 48);
+            this.cadButCadastrar.TabIndex = 6;
+            this.cadButCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CadEmail
+            // cadEntrar
             // 
-            this.CadEmail.AllowDrop = true;
-            this.CadEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CadEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CadEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CadEmail.ForeColor = System.Drawing.Color.White;
-            this.CadEmail.HintForeColor = System.Drawing.Color.White;
-            this.CadEmail.HintText = "E-mail";
-            this.CadEmail.isPassword = false;
-            this.CadEmail.LineFocusedColor = System.Drawing.Color.Silver;
-            this.CadEmail.LineIdleColor = System.Drawing.Color.Gray;
-            this.CadEmail.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.CadEmail.LineThickness = 3;
-            this.CadEmail.Location = new System.Drawing.Point(175, 118);
-            this.CadEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.CadEmail.Name = "CadEmail";
-            this.CadEmail.Size = new System.Drawing.Size(450, 44);
-            this.CadEmail.TabIndex = 8;
-            this.CadEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cadEntrar.AutoSize = true;
+            this.cadEntrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadEntrar.ForeColor = System.Drawing.Color.Black;
+            this.cadEntrar.Location = new System.Drawing.Point(378, 415);
+            this.cadEntrar.Name = "cadEntrar";
+            this.cadEntrar.Size = new System.Drawing.Size(46, 16);
+            this.cadEntrar.TabIndex = 7;
+            this.cadEntrar.Text = "Entrar";
+            this.cadEntrar.Click += new System.EventHandler(this.CadEntrar_Click);
             // 
             // cadastros
             // 
@@ -185,15 +187,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.CadEntar);
-            this.Controls.Add(this.CadButCadastrar);
-            this.Controls.Add(this.CadNome);
-            this.Controls.Add(this.CadSenha);
-            this.Controls.Add(this.CadSobrenome);
-            this.Controls.Add(this.CadConfSenha);
-            this.Controls.Add(this.CadEmail);
+            this.Controls.Add(this.cadEntrar);
+            this.Controls.Add(this.cadButCadastrar);
+            this.Controls.Add(this.cadConfSenha);
+            this.Controls.Add(this.cadSenha);
+            this.Controls.Add(this.cadEmail);
+            this.Controls.Add(this.cadSobrenome);
+            this.Controls.Add(this.cadNome);
             this.Name = "cadastros";
             this.Text = "cadastros";
+            this.Load += new System.EventHandler(this.Cadastros_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,12 +204,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label CadEntar;
-        private Bunifu.Framework.UI.BunifuThinButton2 CadButCadastrar;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CadNome;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CadSenha;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CadSobrenome;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CadConfSenha;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CadEmail;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox cadNome;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox cadSobrenome;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox cadEmail;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox cadSenha;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox cadConfSenha;
+        private Bunifu.Framework.UI.BunifuThinButton2 cadButCadastrar;
+        private System.Windows.Forms.Label cadEntrar;
     }
 }

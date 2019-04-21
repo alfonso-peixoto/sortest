@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerenc_Prova", "Gerenc_Prova.csproj", "{893B8B9F-7026-4746-9CAA-AB6A2A0BEDC4}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "provatest", "..\..\source\repos\provatest\provatest.sqlproj", "{66DF4775-7EED-4468-B03C-9CCD94994E65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{893B8B9F-7026-4746-9CAA-AB6A2A0BEDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{893B8B9F-7026-4746-9CAA-AB6A2A0BEDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{893B8B9F-7026-4746-9CAA-AB6A2A0BEDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{893B8B9F-7026-4746-9CAA-AB6A2A0BEDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DF4775-7EED-4468-B03C-9CCD94994E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DF4775-7EED-4468-B03C-9CCD94994E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DF4775-7EED-4468-B03C-9CCD94994E65}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{66DF4775-7EED-4468-B03C-9CCD94994E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DF4775-7EED-4468-B03C-9CCD94994E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DF4775-7EED-4468-B03C-9CCD94994E65}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B1EA157-3D86-414A-8731-FA0729A52BAC}
+	EndGlobalSection
+EndGlobal
